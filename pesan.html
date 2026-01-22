@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Riwayat Pesanan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3f454a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px 35px;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .title span {
+            font-size: 30px;
+            margin-right: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 14px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f3f6f9;
+            font-weight: bold;
+        }
+
+        .btn-hapus {
+            background-color: #e52525;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-hapus:hover {
+            background-color: #c91e1e;
+        }
+
+        .btn-hapus-semua {
+            margin-top: 25px;
+            background-color: #7b2d0f;
+            color: #fff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-hapus-semua:hover {
+            background-color: #5f220b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="title">
+        <span>📦</span> Riwayat Pesanan
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Produk</th>
+                <th>Jumlah</th>
+                <th>Catatan</th>
+                <th>Total</th>
+                <th>Waktu</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kumar</td>
+                <td>keyboard</td>
+                <td>1</td>
+                <td>kirim besok pagi ya</td>
+                <td>Rp 350.000</td>
+                <td>1/22/2026, 6:38:58 PM</td>
+                <td>
+                    <button class="btn-hapus">Hapus</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="btn-hapus-semua">Hapus Semua Pesanan</button>
+</div>
+
+</body>
+</html>
